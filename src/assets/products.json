@@ -1,0 +1,178 @@
+[
+  {
+    "design": "Wassily Chair",
+    "designer": "Marcel Breuer",
+    "style": "Modernist",
+    "year": 1925,
+    "product_type": "Furniture",
+    "image_url": "https://www.smow.de/pics/kn-019-000/knoll-intl-wassily-varianten-leder-schwarz_zoom.jpg"
+  },
+  {
+    "design": "LC4 Chaise Longue",
+    "designer": "Le Corbusier, Pierre Jeanneret, Charlotte Perriand",
+    "style": "Modernist",
+    "year": 1928,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/lc4-chaise-longue.jpg"
+  },
+  {
+    "design": "Ant Chair",
+    "designer": "Arne Jacobsen",
+    "style": "Modernist",
+    "year": 1952,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/ant-chair.jpg"
+  },
+  {
+    "design": "Eames Lounge Chair",
+    "designer": "Charles and Ray Eames",
+    "style": "Mid-Century Modern",
+    "year": 1956,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/eames-lounge-chair.jpg"
+  },
+  {
+    "design": "Tulip Chair",
+    "designer": "Eero Saarinen",
+    "style": "Modernist",
+    "year": 1956,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/tulip-chair.jpg"
+  },
+  {
+    "design": "Componibili",
+    "designer": "Anna Castelli Ferrieri",
+    "style": "Modernist",
+    "year": 1969,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/componibili.jpg"
+  },
+  {
+    "design": "Ball Chair",
+    "designer": "Eero Aarnio",
+    "style": "Space Age",
+    "year": 1966,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/ball-chair.jpg"
+  },
+  {
+    "design": "Panton Chair",
+    "designer": "Verner Panton",
+    "style": "Modernist",
+    "year": 1967,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/panton-chair.jpg"
+  },
+  {
+    "design": "Arc Lamp",
+    "designer": "Achille and Pier Giacomo Castiglioni",
+    "style": "Modernist",
+    "year": 1962,
+    "product_type": "Lighting",
+    "image_url": "https://example.com/arc-lamp.jpg"
+  },
+  {
+    "design": "Tizio Lamp",
+    "designer": "Richard Sapper",
+    "style": "Modernist",
+    "year": 1972,
+    "product_type": "Lighting",
+    "image_url": "https://example.com/tizio-lamp.jpg"
+  },
+  {
+    "design": "Ghost Chair",
+    "designer": "Philippe Starck",
+    "style": "Postmodern",
+    "year": 2002,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/ghost-chair.jpg"
+  },
+  {
+    "design": "Juicy Salif",
+    "designer": "Philippe Starck",
+    "style": "Postmodern",
+    "year": 1990,
+    "product_type": "Product Design",
+    "image_url": "https://example.com/juicy-salif.jpg"
+  },
+  {
+    "design": "Togo Sofa",
+    "designer": "Michel Ducaroy",
+    "style": "Postmodern",
+    "year": 1973,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/togo-sofa.jpg"
+  },
+  {
+    "design": "Noguchi Coffee Table",
+    "designer": "Isamu Noguchi",
+    "style": "Mid-Century Modern",
+    "year": 1947,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/noguchi-coffee-table.jpg"
+  },
+  {
+    "design": "Barcelona Chair",
+    "designer": "Ludwig Mies van der Rohe",
+    "style": "Modernist",
+    "year": 1929,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/barcelona-chair.jpg"
+  },
+  {
+    "design": "Molded Plastic Chair",
+    "designer": "Charles and Ray Eames",
+    "style": "Modernist",
+    "year": 1948,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/molded-plastic-chair.jpg"
+  },
+  {
+    "design": "Isokon Penguin Donkey Bookcase",
+    "designer": "Egon Riss",
+    "style": "Modernist",
+    "year": 1939,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/penguin-donkey-bookcase.jpg"
+  },
+  {
+    "design": "Phantom Chair",
+    "designer": "Maarten Baas",
+    "style": "Postmodern",
+    "year": 2005,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/phantom-chair.jpg"
+  },
+  {
+    "design": "Egg Chair",
+    "designer": "Arne Jacobsen",
+    "style": "Modernist",
+    "year": 1958,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/egg-chair.jpg"
+  },
+  {
+    "design": "Womb Chair",
+    "designer": "Eero Saarinen",
+    "style": "Modernist",
+    "year": 1948,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/womb-chair.jpg"
+  },
+  {
+    "design": "Diamond Chair",
+    "designer": "Harry Bertoia",
+    "style": "Modernist",
+    "year": 1952,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/diamond-chair.jpg"
+  },
+  {
+    "design": "Egg Table",
+    "designer": "Arne Jacobsen",
+    "style": "Modernist",
+    "year": 1958,
+    "product_type": "Furniture",
+    "image_url": "https://example.com/egg-table.jpg"
+  }
+]
