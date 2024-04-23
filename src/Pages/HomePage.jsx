@@ -1,18 +1,22 @@
 import React from "react";
-import RecipeCard from "../Components/RecipeCard/RecipeCard";
-import recipes from "../assets/recipes.json";
+import { Link } from "react-router-dom";
+import "./HomePage.css";
 
 function HomePage() {
   return (
     <>
-      {recipes.map((recipe) => (
-        <RecipeCard
-          key={recipe.id}
-          name={recipe.name}
-          calories={recipe.calories}
-          image={recipe.image}
-        />
-      ))}
+      {/* Wrap the button inside the Link component */}
+      <Link to="/recipes">
+        <button>See Recipes</button>
+      </Link>
+
+      {/* Add Links for other buttons */}
+      <Link to="/add-recipe">
+        <button>Add a Recipe</button>
+      </Link>
+      <Link to="/feeling-lucky">
+        <button>Feeling lucky today</button>
+      </Link>
     </>
   );
 }

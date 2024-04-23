@@ -9,7 +9,7 @@ function Footer() {
         href="https://github.com/ecemonkol/recipe-book"
         target="_blank"
       >
-        Check our github repo
+        Check github repo
       </a>
     </div>
   );

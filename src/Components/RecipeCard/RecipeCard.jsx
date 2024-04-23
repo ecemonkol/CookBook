@@ -1,13 +1,16 @@
 import React from "react";
+import "./RecipeCard.css";
 
-export default function RecipeCard({ key, name, calories, image }) {
+export default function RecipeCard({ id, name, calories, image, servings }) {
   return (
     <div className="product-card">
-      <img src={image} alt={key} />
+      <img src={image} alt={name} />
       <div className="product-details">
         <h2>{name}</h2>
-        <p>calories: {calories}</p>
+        {/* <p>{servings} portion</p> */}
+        <p className="text-calories">calories: {calories}</p>
       </div>
+      <button>X</button>
     </div>
   );
 }
