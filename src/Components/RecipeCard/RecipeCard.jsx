@@ -1,22 +1,12 @@
 import React from "react";
 
-export default function ProductCard({
-  design,
-  designer,
-  year,
-  style,
-  designType,
-  image,
-}) {
+export default function RecipeCard({ key, name, calories, image }) {
   return (
     <div className="product-card">
-      <img src={image} alt={design} />
+      <img src={image} alt={key} />
       <div className="product-details">
-        <h2>{design}</h2>
-        <p>Designer: {designer}</p>
-        <p>Year: {year}</p>
-        <p>Style: {style}</p>
-        <p>Type: {designType}</p>
+        <h2>{name}</h2>
+        <p>calories: {calories}</p>
       </div>
     </div>
   );

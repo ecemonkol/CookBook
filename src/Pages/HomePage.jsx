@@ -1,19 +1,16 @@
 import React from "react";
 import RecipeCard from "../Components/RecipeCard/RecipeCard";
-import products from "../assets/products.json";
+import recipes from "../assets/recipes.json";
 
 function HomePage() {
   return (
     <>
-      {products.map((product, index) => (
+      {recipes.map((recipe) => (
         <RecipeCard
-          key={index}
-          design={product.design}
-          designer={product.designer}
-          year={product.year}
-          style={product.style}
-          designType={product.design_type}
-          image={product.image}
+          key={recipe.id}
+          name={recipe.name}
+          calories={recipe.calories}
+          image={recipe.image}
         />
       ))}
     </>
