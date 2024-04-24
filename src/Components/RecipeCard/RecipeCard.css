@@ -1,5 +1,5 @@
 .product-card {
-  width: 260px;
+  height: 300px;
   margin: 30px;
   border: 1px solid black;
   background: rgb(26, 97, 5);
@@ -18,9 +18,8 @@
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  text-align: center;
+  /* text-align: center; */
   padding-left: 10px;
-  padding-right: 10px;
 }
 
 img {

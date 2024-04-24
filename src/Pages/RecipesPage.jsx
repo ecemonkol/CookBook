@@ -7,8 +7,6 @@ import { useState } from "react";
 function RecipesPage() {
   const [recipes, setRecipes] = useState(receipeData);
   const deleteItem = (id) => {
-    // setRecipeList((prevList) => prevList.filter((recipe) => recipe.id !== id));
-    // console.log(id);
     const newRecipe = recipes.filter((recipe) => recipe.id !== id);
     console.log(newRecipe, "filtered");
     setRecipes(newRecipe);
