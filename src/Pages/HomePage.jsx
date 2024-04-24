@@ -15,7 +15,7 @@ function HomePage() {
         <button>Add a Recipe</button>
       </Link>
       <Link to="/feeling-lucky">
-        <button>Feeling lucky today</button>
+        <button>Recipe Roulette</button>
       </Link>
     </div>
   );

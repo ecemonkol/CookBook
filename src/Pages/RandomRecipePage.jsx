@@ -9,12 +9,11 @@ function RandomRecipePage() {
 
   return (
     <Link to={`/recipes/${randomRecipe.id}`}>
-      <div className="centered-content">
+      <div className="random-content">
         <div className="product-card" key={randomRecipe.id}>
           <img src={randomRecipe.image} alt={randomRecipe.name} />
           <div className="product-details">
             <h2>{randomRecipe.name}</h2>
-            <p className="text-calories">calories: {randomRecipe.calories}</p>
           </div>
         </div>
       </div>

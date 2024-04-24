@@ -29,11 +29,6 @@ img {
   object-fit: cover;
 }
 
-.text-calories {
-  font-family: "Lexend Deca", sans-serif;
-  text-align: center;
-}
-
 .delete-button {
   color: white;
   background-color: black;

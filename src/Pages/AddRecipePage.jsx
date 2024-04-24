@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import recipeData from "../assets/recipes.json";
+// import recipeData from "../assets/recipes.json";
 
 import "./AddRecipePage.css";
 
-function AddRecipePage(props) {
-  const [recipes, setRecipes] = useState(recipeData);
+function AddRecipePage({ handleAddRecipe, recipes }) {
+  // const [recipes, setRecipes] = useState(recipeData);
   const [name, setName] = useState("");
   const [calories, setCalories] = useState(0);
   const [serving, setServing] = useState(1);
@@ -19,14 +19,15 @@ function AddRecipePage(props) {
 
   const handleImageInput = (e) => setImage(e.target.value);
 
-  function handleAddRecipe(recipe) {
-    setRecipes((prevRecipes) => [recipe, ...prevRecipes]);
-  }
+  // function handleAddRecipe(recipe) {
+  //   setRecipes((prevRecipes) => [recipe, ...prevRecipes]);
+  // }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const newRecipe = {
+      id: Date.now(),
       recipes,
       name,
       image,

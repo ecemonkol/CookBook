@@ -1,17 +1,17 @@
 import React from "react";
 import RecipeCard from "../Components/RecipeCard/RecipeCard";
-import receipeData from "../assets/recipes.json";
+// import receipeData from "../assets/recipes.json";
 import "./RecipesPage.css";
-import { useState } from "react";
+// import { useState } from "react";
 
-function RecipesPage() {
-  const [recipes, setRecipes] = useState(receipeData);
+function RecipesPage({ recipes, setRecipes }) {
+  // const [recipes, setRecipes] = useState(receipeData);
+  console.log(recipes);
   const deleteItem = (id) => {
     const newRecipe = recipes.filter((recipe) => recipe.id !== id);
     console.log(newRecipe, "filtered");
     setRecipes(newRecipe);
   };
-  console.log(recipes);
   return (
     <div className="recipe-cards">
       {recipes.map((recipe) => (

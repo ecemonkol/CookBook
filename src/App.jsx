@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import HomePage from "./Pages/HomePage";
@@ -7,20 +8,38 @@ import AboutPage from "./Pages/AboutPage";
 import AddRecipePage from "./Pages/AddRecipePage";
 import RandomRecipePage from "./Pages/RandomRecipePage";
 import { Routes, Route } from "react-router-dom";
+import recipeData from "./assets/recipes.json";
 
 import "./App.css";
 
 function App() {
+  const [recipes, setRecipes] = useState(recipeData);
+
+  const handleAddRecipe = (newRecipe) => {
+    setRecipes((prevRecipes) => [newRecipe, ...prevRecipes]);
+  };
+
   return (
     <>
       <Navbar />
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/recipes" element={<RecipesPage />} />
+          <Route
+            path="/recipes"
+            element={<RecipesPage recipes={recipes} setRecipes={setRecipes} />}
+          />
           <Route path="/recipes/:recipeId" element={<RecipeDetailsPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/add-recipe" element={<AddRecipePage />} />
+          <Route
+            path="/add-recipe"
+            element={
+              <AddRecipePage
+                recipes={recipes}
+                handleAddRecipe={handleAddRecipe}
+              />
+            }
+          />
           <Route path="/feeling-lucky" element={<RandomRecipePage />} />
         </Routes>
       </div>
