@@ -5,10 +5,17 @@ body {
 
 .home-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 70vh;
+}
+
+.dot {
+  font-family: "Konstant Grotesk", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  margin: auto 20px;
 }
 
 .home-buttons button {
@@ -17,7 +24,7 @@ body {
   border: none;
   font-family: "Konstant Grotesk", sans-serif;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 35px;
 }
 .home-buttons button:hover {
   color: tomato;

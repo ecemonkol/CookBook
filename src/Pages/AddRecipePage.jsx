@@ -10,6 +10,8 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
   const [calories, setCalories] = useState(0);
   const [serving, setServing] = useState(1);
   const [image, setImage] = useState("");
+  const [ingredients, setIngredients] = useState("");
+  const [instructions, setInstructions] = useState("");
 
   const handleNameInput = (e) => setName(e.target.value);
 
@@ -18,6 +20,10 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
   const handleServingInput = (e) => setServing(e.target.value);
 
   const handleImageInput = (e) => setImage(e.target.value);
+
+  const handleIngredientsInput = (e) => setIngredients(e.target.value);
+
+  const handleInstructionsInput = (e) => setInstructions(e.target.value);
 
   // function handleAddRecipe(recipe) {
   //   setRecipes((prevRecipes) => [recipe, ...prevRecipes]);
@@ -45,41 +51,78 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
   };
 
   return (
-    <div className="AddMovie">
-      <h4>Add a Movie</h4>
+    <div className="add-recipe-card">
+      <h4>Add a Recipe</h4>
       <form onSubmit={handleSubmit}>
-        <label>Title:</label>
-        <input
-          type="text"
-          name="name"
-          value={name}
-          onChange={handleNameInput}
-        />
+        <div className="input-row">
+          <div className="input-group-small">
+            <label>Title:</label>
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={handleNameInput}
+            />
+          </div>
+          <div className="input-group-small">
+            <label>Calories:</label>
+            <input
+              type="number"
+              name="calories"
+              value={calories}
+              onChange={handleCaloriesInput}
+            />
+          </div>
+          <div className="input-group-small">
+            <label>Serving:</label>
+            <input
+              type="number"
+              name="serving"
+              value={serving}
+              onChange={handleServingInput}
+            />
+          </div>
+        </div>
 
-        <label>CALORIES:</label>
-        <input
-          type="number"
-          name="calories"
-          value={calories}
-          onChange={handleCaloriesInput}
-        />
+        <div className="input-row">
+          <div className="input-group-triple">
+            <label>Image:</label>
+            <input
+              type="text"
+              name="image"
+              value={image}
+              onChange={handleImageInput}
+            />
+          </div>
+        </div>
 
-        <label>SERVING</label>
-        <input
-          type="number"
-          name="serving"
-          value={serving}
-          onChange={handleServingInput}
-        />
+        <div className="input-row">
+          <div className="input-group-triple">
+            <label>Ingredients:</label>
+            <textarea
+              name="ingredients"
+              value={ingredients}
+              onChange={handleIngredientsInput}
+              rows="4"
+            />
+          </div>
+        </div>
 
-        <label>Image:</label>
-        <input
-          type="text"
-          name="hasOscars"
-          value={image}
-          onChange={handleImageInput}
-        />
-        <button type="submit">Add a Recipe</button>
+        <div className="input-row">
+          <div className="input-group-triple">
+            <label>Instructions:</label>
+            <textarea
+              name="instructions"
+              value={instructions}
+              onChange={handleInstructionsInput}
+              rows="4"
+            />
+          </div>
+        </div>
+
+        <button className="submit-button" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

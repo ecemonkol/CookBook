@@ -1,5 +1,5 @@
 .product-card {
-  height: 300px;
+  height: 280px;
   margin: 30px;
   border: 1px solid black;
   background: rgb(26, 97, 5);
@@ -20,17 +20,26 @@
   font-style: normal;
   /* text-align: center; */
   padding-left: 10px;
+  font-size: 22px;
 }
 
-img {
-  height: 240px;
-  width: 260px;
+.recipe-card-img {
+  height: 220px;
+  width: 240px;
   border-bottom: 1px solid black;
   object-fit: cover;
 }
 
 .delete-button {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: transparent;
   border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+}
+
+.name-delete {
+  display: flex;
+  justify-content: space-between; /* This will move the delete button to the right */
+  align-items: center; /* To vertically center the button */
 }

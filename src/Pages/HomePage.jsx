@@ -14,6 +14,7 @@ function HomePage() {
       <Link to="/add-recipe">
         <button>Add a Recipe</button>
       </Link>
+      <p className="dot">•</p>
       <Link to="/feeling-lucky">
         <button>Recipe Roulette</button>
       </Link>

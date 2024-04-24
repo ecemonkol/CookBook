@@ -1,7 +1,11 @@
-.random-content {
+.random-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  margin: 0 auto;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 50vh; /* Set height to 100% of the viewport height */
+}
+
+.product-card {
+  width: 240px;
+  /* Your existing styles */
 }

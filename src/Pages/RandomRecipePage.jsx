@@ -8,16 +8,22 @@ function RandomRecipePage() {
   const randomRecipe = recipes[randomNumber];
 
   return (
-    <Link to={`/recipes/${randomRecipe.id}`}>
-      <div className="random-content">
-        <div className="product-card" key={randomRecipe.id}>
-          <img src={randomRecipe.image} alt={randomRecipe.name} />
+    <div className="random-card">
+      <div className="product-card" key={randomRecipe.id}>
+        <Link to={`/recipes/${randomRecipe.id}`}>
+          <img
+            className="recipe-card-img"
+            src={randomRecipe.image}
+            alt={randomRecipe.name}
+          />
+        </Link>
+        <div className="name-delete">
           <div className="product-details">
             <h2>{randomRecipe.name}</h2>
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 

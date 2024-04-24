@@ -42,6 +42,12 @@
 }
 
 .arrow-container {
-  margin-top: 20px;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.arrow {
+  max-width: 100%; /* Ensure the arrow does not exceed its original width */
+  max-height: 100%; /* Ensure the arrow does not exceed its original height */
 }
