@@ -1,0 +1,9 @@
+.add-recipe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 500px;
+  margin-left: 200px;
+  border: 2px black solid;
+}

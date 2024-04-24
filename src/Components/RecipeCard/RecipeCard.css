@@ -7,9 +7,11 @@
 }
 
 .product-card:hover {
-  box-shadow: 0 0 0 3px rgb(186, 72, 188);
-  border: 1px solid rgb(186, 72, 188); /* Adjust the thickness here */
+  box-shadow: 0 0 0 3px tomato;
+  border: 1px solid tomato;
 }
+
+/* rgb(186, 72, 188); */
 
 .product-card h2 {
   color: black;
@@ -31,4 +33,10 @@ img {
 .text-calories {
   font-family: "Lexend Deca", sans-serif;
   text-align: center;
+}
+
+.delete-button {
+  color: white;
+  background-color: black;
+  border: none;
 }

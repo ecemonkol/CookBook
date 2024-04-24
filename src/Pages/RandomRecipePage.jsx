@@ -1,7 +1,25 @@
 import React from "react";
+import recipes from "../assets/recipes.json";
+import "./RandomRecipePage.css";
+import { Link } from "react-router-dom";
 
 function RandomRecipePage() {
-  return <p>dfsfdsf</p>;
+  const randomNumber = Math.floor(Math.random() * recipes.length);
+  const randomRecipe = recipes[randomNumber];
+
+  return (
+    <Link to={`/recipes/${randomRecipe.id}`}>
+      <div className="centered-content">
+        <div className="product-card" key={randomRecipe.id}>
+          <img src={randomRecipe.image} alt={randomRecipe.name} />
+          <div className="product-details">
+            <h2>{randomRecipe.name}</h2>
+            <p className="text-calories">calories: {randomRecipe.calories}</p>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
 }
 
 export default RandomRecipePage;

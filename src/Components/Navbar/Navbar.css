@@ -2,19 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
+  height: 180px;
   position: sticky;
 }
 
 .logo {
   font-weight: bolder;
   color: rgb(0, 0, 0);
-  margin-left: 30px;
-  margin-top: 40px;
+  margin-left: 50px;
+  margin-top: 50px;
   text-decoration: none;
   font-family: "Ojuju", sans-serif;
+
   font-weight: 800;
-  font-size: 70px;
+  font-size: 90px;
 }
 
 .about-link {
@@ -24,4 +25,8 @@
   text-decoration: none;
   color: black;
   margin-right: 100px;
+}
+
+.about-link:hover {
+  color: tomato;
 }

@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className="Navbar">
       <Link to={"/"}>
-        <p className="logo">cook book</p>
+        <p className="logo">CookBook</p>
       </Link>
 
       <Link to={"/about"} className="about-link">
