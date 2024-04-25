@@ -133,7 +133,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
         </form>
       </div>
       <div className="arrow-container">
-        <Link to={"/"}>
+        <Link className="arrow" to={"/"}>
           <img className="arrow" src={arrow} alt="Arrow" />
         </Link>
       </div>

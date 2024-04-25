@@ -40,7 +40,7 @@ function RecipeDetailsPage({ recipes }) {
             </div>
           </div>
           <div className="arrow-container">
-            <Link to={"/recipes"}>
+            <Link className="arrow" to={"/recipes"}>
               <img className="arrow" src={arrow} alt="Arrow" />
             </Link>
           </div>
