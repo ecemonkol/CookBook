@@ -2,8 +2,6 @@
 
 import React from "react";
 import "../App.css";
-import arrow from "../assets/arrow.png";
-import { Link } from "react-router-dom";
 import ecem from "../assets/ecem.png";
 
 function AboutPage() {
@@ -23,11 +21,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="arrow-container">
-        <Link className="arrow" to={"/"}>
-          <img className="arrow" src={arrow} alt="Arrow" />
-        </Link>
-      </div>
+      <div className="arrow-container"></div>
     </div>
   );
 }
