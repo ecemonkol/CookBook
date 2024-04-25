@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import HomePage from "./Pages/HomePage";
@@ -13,11 +13,21 @@ import recipeData from "./assets/recipes.json";
 import "./App.css";
 
 function App() {
-  const [recipes, setRecipes] = useState(recipeData);
+  // const [recipes, setRecipes] = useState(recipeData);
 
   const handleAddRecipe = (newRecipe) => {
     setRecipes((prevRecipes) => [newRecipe, ...prevRecipes]);
   };
+
+  const [recipes, setRecipes] = useState(() => {
+    const storedRecipes = localStorage.getItem("recipes");
+    return storedRecipes ? JSON.parse(storedRecipes) : recipeData;
+  });
+
+  // Save recipes to local storage whenever there's an update
+  useEffect(() => {
+    localStorage.setItem("recipes", JSON.stringify(recipes));
+  }, [recipes]);
 
   return (
     <>
