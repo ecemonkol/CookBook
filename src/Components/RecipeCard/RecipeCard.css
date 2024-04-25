@@ -7,8 +7,8 @@
 }
 
 .product-card:hover {
-  box-shadow: 0 0 0 3px tomato;
-  border: 1px solid tomato;
+  box-shadow: 0 0 0 3px rgb(0, 0, 0);
+  border: 1px dashed rgb(0, 0, 0);
 }
 
 /* rgb(186, 72, 188); */
@@ -36,6 +36,11 @@
   border: none;
   font-family: "Lexend Deca", sans-serif;
   font-size: 18px;
+  margin-right: 5px;
+}
+
+.delete-button:hover {
+  color: tomato;
 }
 
 .name-delete {

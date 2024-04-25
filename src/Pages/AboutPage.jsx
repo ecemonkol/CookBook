@@ -1,5 +1,7 @@
 // import "./AboutPage.css";
+
 import React from "react";
+import arrow from "../assets/arrow.png";
 import "../App.css";
 
 function AboutPage() {

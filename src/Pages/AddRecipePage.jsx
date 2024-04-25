@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 // import recipeData from "../assets/recipes.json";
 import "../App.css";
+import arrow from "../assets/arrow.png";
+import { Link } from "react-router-dom";
 
 // import "./AddRecipePage.css";
 
@@ -40,6 +42,8 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
       image,
       calories,
       serving,
+      ingredients,
+      instructions,
     };
 
     // Add new student to students array
@@ -50,81 +54,89 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
     setServing("");
     setCalories("");
   };
+  console.log(image);
 
   return (
-    <div className="add-recipe-card">
-      <h4>Add a Recipe</h4>
-      <form onSubmit={handleSubmit}>
-        <div className="input-row">
-          <div className="input-group-small">
-            <label>Title:</label>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={handleNameInput}
-            />
+    <div>
+      <div className="add-recipe-card">
+        <h4>Add a Recipe</h4>
+        <form onSubmit={handleSubmit}>
+          <div className="input-row">
+            <div className="input-group-small">
+              <label>Title:</label>
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={handleNameInput}
+              />
+            </div>
+            <div className="input-group-small">
+              <label>Calories:</label>
+              <input
+                type="number"
+                name="calories"
+                value={calories}
+                onChange={handleCaloriesInput}
+              />
+            </div>
+            <div className="input-group-small">
+              <label>Serving:</label>
+              <input
+                type="number"
+                name="serving"
+                value={serving}
+                onChange={handleServingInput}
+              />
+            </div>
           </div>
-          <div className="input-group-small">
-            <label>Calories:</label>
-            <input
-              type="number"
-              name="calories"
-              value={calories}
-              onChange={handleCaloriesInput}
-            />
-          </div>
-          <div className="input-group-small">
-            <label>Serving:</label>
-            <input
-              type="number"
-              name="serving"
-              value={serving}
-              onChange={handleServingInput}
-            />
-          </div>
-        </div>
 
-        <div className="input-row">
-          <div className="input-group-triple">
-            <label>Image:</label>
-            <input
-              type="text"
-              name="image"
-              value={image}
-              onChange={handleImageInput}
-            />
+          <div className="input-row">
+            <div className="input-group-triple">
+              <label>Image:</label>
+              <input
+                type="text"
+                name="image"
+                value={image}
+                onChange={handleImageInput}
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="input-row">
-          <div className="input-group-triple">
-            <label>Ingredients:</label>
-            <textarea
-              name="ingredients"
-              value={ingredients}
-              onChange={handleIngredientsInput}
-              rows="4"
-            />
+          <div className="input-row">
+            <div className="input-group-triple">
+              <label>Ingredients:</label>
+              <textarea
+                name="ingredients"
+                value={ingredients}
+                onChange={handleIngredientsInput}
+                rows="4"
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="input-row">
-          <div className="input-group-triple">
-            <label>Instructions:</label>
-            <textarea
-              name="instructions"
-              value={instructions}
-              onChange={handleInstructionsInput}
-              rows="4"
-            />
+          <div className="input-row">
+            <div className="input-group-triple">
+              <label>Instructions:</label>
+              <textarea
+                name="instructions"
+                value={instructions}
+                onChange={handleInstructionsInput}
+                rows="4"
+              />
+            </div>
           </div>
-        </div>
 
-        <button className="submit-button" type="submit">
-          Submit
-        </button>
-      </form>
+          <button className="submit-button" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div className="arrow-container">
+        <Link to={"/"}>
+          <img className="arrow" src={arrow} alt="Arrow" />
+        </Link>
+      </div>
     </div>
   );
 }

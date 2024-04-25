@@ -29,7 +29,10 @@ function App() {
             path="/recipes"
             element={<RecipesPage recipes={recipes} setRecipes={setRecipes} />}
           />
-          <Route path="/recipes/:recipeId" element={<RecipeDetailsPage />} />
+          <Route
+            path="/recipes/:recipeId"
+            element={<RecipeDetailsPage recipes={recipes} />}
+          />
           <Route path="/about" element={<AboutPage />} />
           <Route
             path="/add-recipe"
