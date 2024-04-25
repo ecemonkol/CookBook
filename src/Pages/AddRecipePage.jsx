@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
 // import recipeData from "../assets/recipes.json";
+import "../App.css";
 
-import "./AddRecipePage.css";
+// import "./AddRecipePage.css";
 
 function AddRecipePage({ handleAddRecipe, recipes }) {
   // const [recipes, setRecipes] = useState(recipeData);

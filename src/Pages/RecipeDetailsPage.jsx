@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import recipes from "../assets/recipes.json";
 import arrow from "../assets/arrow.png";
-import "./RecipeDetailsPage.css";
+// import "./RecipeDetailsPage.css";
+import "../App.css";
 
 function RecipeDetailsPage() {
   const { recipeId } = useParams();

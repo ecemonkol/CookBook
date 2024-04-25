@@ -1,7 +1,8 @@
 import React from "react";
 import recipes from "../assets/recipes.json";
-import "./RandomRecipePage.css";
+// import "./RandomRecipePage.css";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 function RandomRecipePage() {
   const randomNumber = Math.floor(Math.random() * recipes.length);
