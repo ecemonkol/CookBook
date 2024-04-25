@@ -8,16 +8,15 @@ function HomePage() {
   return (
     <div className="home-buttons">
       <Link to="/recipes">
-        <button>See Recipes</button>
+        <button className="button-see">See Recipes</button>
       </Link>
-      <img className="tomato" src={tomato} alt="dghfh" />
+      {/* <img className="tomato" src={tomato} alt="dghfh" /> */}
 
       <Link to="/add-recipe">
-        <button>Add a Recipe</button>
+        <button className="button-add">Add a Recipe</button>
       </Link>
-      <p className="dot">•</p>
       <Link to="/feeling-lucky">
-        <button>Recipe Roulette</button>
+        <button className="button-roulette">Recipe Roulette</button>
       </Link>
     </div>
   );

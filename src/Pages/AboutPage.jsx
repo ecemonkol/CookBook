@@ -15,7 +15,9 @@ function AboutPage() {
         <div className="product-details">
           <h2>Ecem Onkol</h2>
           <div className="ecem-links">
-            <a href="https://github.com/ecemonkol">gitHub </a>•{" "}
+            <a href="https://github.com/ecemonkol">
+              gitHub<span>///</span>
+            </a>
             <a href="https://www.linkedin.com/in/ecemonkol/">LinkedIn</a>
           </div>
         </div>
