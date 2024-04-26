@@ -249,3 +249,7 @@ body {
 a {
   display: inline-block;
 }
+
+.not-found {
+  font-size: 30px;
+}

@@ -11,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import recipeData from "./assets/recipes.json";
 
 import "./App.css";
+import NotFoundPage from "./Pages/NotFoundPage";
 
 function App() {
   // const [recipes, setRecipes] = useState(recipeData);
@@ -54,6 +55,7 @@ function App() {
             }
           />
           <Route path="/feeling-lucky" element={<RandomRecipePage />} />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </div>
       <Footer />
