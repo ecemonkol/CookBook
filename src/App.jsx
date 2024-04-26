@@ -55,7 +55,7 @@ function App() {
             }
           />
           <Route path="/feeling-lucky" element={<RandomRecipePage />} />
-          <Route path="/*" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
       <Footer />
