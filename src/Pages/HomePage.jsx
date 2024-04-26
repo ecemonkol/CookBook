@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./HomePage.css";
-import tomato from "../assets/tomato.png"; // Adjusted import path
+import tomato from "../assets/tomato.png";
 import "../App.css";
 
 function HomePage() {
