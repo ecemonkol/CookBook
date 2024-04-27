@@ -151,7 +151,7 @@ body {
   object-fit: contain;
 }
 
-.button-see {
+.button-add {
   position: absolute;
   top: 500px; /* Adjust these values to place the button where you want */
   left: 25%;
@@ -163,7 +163,7 @@ body {
   right: 15%;
 }
 
-.button-add {
+.button-see {
   position: absolute;
   top: 270px;
   left: 40%;

@@ -14,8 +14,6 @@ import "./App.css";
 import NotFoundPage from "./Pages/NotFoundPage";
 
 function App() {
-  // const [recipes, setRecipes] = useState(recipeData);
-
   const handleAddRecipe = (newRecipe) => {
     setRecipes((prevRecipes) => [newRecipe, ...prevRecipes]);
   };
@@ -25,7 +23,6 @@ function App() {
     return storedRecipes ? JSON.parse(storedRecipes) : recipeData;
   });
 
-  // Save recipes to local storage whenever there's an update
   useEffect(() => {
     localStorage.setItem("recipes", JSON.stringify(recipes));
   }, [recipes]);

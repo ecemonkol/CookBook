@@ -53,6 +53,8 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
     setImage("");
     setServing("");
     setCalories("");
+    setInstructions("");
+    setIngredients("");
   };
   console.log(image);
 
