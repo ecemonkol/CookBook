@@ -55,13 +55,13 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
 
     console.log(recipes);
 
-    // setName("");
-    // setImage("");
-    // setServing("");
-    // setCalories("");
-    // setInstructions("");
-    // setIngredients("");
-    // setIsVegetarian(false);
+    setName("");
+    setImage("");
+    setServing("");
+    setCalories("");
+    setInstructions("");
+    setIngredients("");
+    setIsVegetarian(false);
   };
   console.log(image);
 

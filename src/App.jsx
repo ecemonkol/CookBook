@@ -27,6 +27,24 @@ function App() {
     localStorage.setItem("recipes", JSON.stringify(recipes));
   }, [recipes]);
 
+  const [showOnlyVegi, setShowOnlyVegi] = useState(false);
+
+  function toggleVegi() {
+    setShowOnlyVegi((prevShowOnlyVegi) => !prevShowOnlyVegi);
+  }
+
+  function sortName() {
+    setRecipes((prevRecipes) =>
+      [...prevRecipes].sort((a, b) => a.name.localeCompare(b.name))
+    );
+  }
+
+  function sortCal() {
+    setRecipes((prevRecipes) =>
+      [...prevRecipes].sort((a, b) => a.calories - b.calories)
+    );
+  }
+
   return (
     <>
       <Navbar />
@@ -35,7 +53,20 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route
             path="/recipes"
-            element={<RecipesPage recipes={recipes} setRecipes={setRecipes} />}
+            element={
+              <RecipesPage
+                recipes={
+                  showOnlyVegi
+                    ? recipes.filter((recipe) => recipe.isVegetarian)
+                    : recipes
+                }
+                setRecipes={setRecipes}
+                toggleVegi={toggleVegi}
+                showOnlyVegi={showOnlyVegi}
+                sortName={sortName}
+                sortCal={sortCal}
+              />
+            }
           />
           <Route
             path="/recipes/:recipeId"
@@ -44,12 +75,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route
             path="/add-recipe"
-            element={
-              <AddRecipePage
-                recipes={recipes}
-                handleAddRecipe={handleAddRecipe}
-              />
-            }
+            element={<AddRecipePage handleAddRecipe={handleAddRecipe} />}
           />
           <Route path="/feeling-lucky" element={<RandomRecipePage />} />
           <Route path="*" element={<NotFoundPage />} />
