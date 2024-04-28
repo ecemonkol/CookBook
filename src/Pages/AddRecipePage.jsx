@@ -15,6 +15,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
   const [image, setImage] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [instructions, setInstructions] = useState("");
+  const [isVegetarian, setIsVegetarian] = useState(false);
 
   const handleNameInput = (e) => setName(e.target.value);
 
@@ -27,6 +28,8 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
   const handleIngredientsInput = (e) => setIngredients(e.target.value);
 
   const handleInstructionsInput = (e) => setInstructions(e.target.value);
+
+  const hadleIsVegetarian = (e) => setIsVegetarian(e.target.checked);
 
   // function handleAddRecipe(recipe) {
   //   setRecipes((prevRecipes) => [recipe, ...prevRecipes]);
@@ -44,10 +47,13 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
       serving,
       ingredients,
       instructions,
+      isVegetarian,
     };
 
     // Add new student to students array
     handleAddRecipe(newRecipe);
+
+    console.log(recipes);
 
     setName("");
     setImage("");
@@ -55,6 +61,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
     setCalories("");
     setInstructions("");
     setIngredients("");
+    setIsVegetarian(false);
   };
   console.log(image);
 
@@ -100,6 +107,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 type="text"
                 name="image"
                 value={image}
+                checked={isVegetarian}
                 onChange={handleImageInput}
               />
             </div>
@@ -126,6 +134,18 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 onChange={handleInstructionsInput}
                 rows="4"
               />
+            </div>
+          </div>
+
+          <div className="input-row">
+            <div className="checkbox-veg">
+              <input
+                type="checkbox"
+                name="vegetarian"
+                checked={isVegetarian}
+                onChange={hadleIsVegetarian}
+              />
+              <label>Vegetarian</label>
             </div>
           </div>
 
