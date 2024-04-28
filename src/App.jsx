@@ -23,6 +23,8 @@ function App() {
     return storedRecipes ? JSON.parse(storedRecipes) : recipeData;
   });
 
+  // localStorage.clear();
+
   useEffect(() => {
     localStorage.setItem("recipes", JSON.stringify(recipes));
   }, [recipes]);
