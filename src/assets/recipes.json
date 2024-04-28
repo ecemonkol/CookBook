@@ -6,7 +6,8 @@
     "image": "https://i.pinimg.com/564x/e0/c5/b5/e0c5b5ee8e4c56894a8550da6c789d73.jpg",
     "servings": 1,
     "ingredients": "Dough, Tomato sauce, Mozzarella cheese, Pepperoni, Olive oil",
-    "instructions": "1. Roll out the dough. 2. Spread tomato sauce evenly. 3. Sprinkle mozzarella cheese. 4. Add pepperoni slices. 5. Drizzle olive oil. 6. Bake in preheated oven at 200°C for 15-20 minutes or until golden brown."
+    "instructions": "1. Roll out the dough. 2. Spread tomato sauce evenly. 3. Sprinkle mozzarella cheese. 4. Add pepperoni slices. 5. Drizzle olive oil. 6. Bake in preheated oven at 200°C for 15-20 minutes or until golden brown.",
+    "isVegetarian": true
   },
   {
     "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",
@@ -15,7 +16,8 @@
     "image": "https://i.pinimg.com/564x/a9/11/06/a91106886e11586a5cda7daf79c0dac9.jpg",
     "servings": 1,
     "ingredients": "Lettuce (1 cup), Tomatoes (1 medium), Cucumbers (1/2), Carrots (1 small), Dressing (2 tbsp)",
-    "instructions": "1. Chop lettuce, tomatoes, cucumbers, and carrots. 2. Mix all vegetables in a bowl. 3. Add dressing and toss well. 4. Serve chilled."
+    "instructions": "1. Chop lettuce, tomatoes, cucumbers, and carrots. 2. Mix all vegetables in a bowl. 3. Add dressing and toss well. 4. Serve chilled.",
+    "isVegetarian": true
   },
   {
     "id": "b5eb5b5f-41b8-4f1f-8844-7a1a56a17df7",
@@ -24,7 +26,8 @@
     "image": "https://i.pinimg.com/564x/cb/ed/e6/cbede658f7cb048f1315554426948d38.jpg",
     "servings": 1,
     "ingredients": "Sweet potato (1 medium), Olive oil (1 tbsp), Salt (1/2 tsp), Pepper (1/4 tsp)",
-    "instructions": "1. Preheat oven to 200°C. 2. Peel and dice sweet potato. 3. Toss sweet potato cubes with olive oil, salt, and pepper. 4. Spread on a baking sheet. 5. Roast for 25-30 minutes or until tender and golden brown."
+    "instructions": "1. Preheat oven to 200°C. 2. Peel and dice sweet potato. 3. Toss sweet potato cubes with olive oil, salt, and pepper. 4. Spread on a baking sheet. 5. Roast for 25-30 minutes or until tender and golden brown.",
+    "isVegetarian": true
   },
   {
     "id": "6c0f6f33-8c50-403d-9d1c-6ac9d8b77f29",
@@ -33,7 +36,8 @@
     "image": "https://i.pinimg.com/564x/c8/01/4c/c8014c7076d556a3c8b114efc03b4de2.jpg",
     "servings": 1,
     "ingredients": "Gnocchi (250g), Tomato sauce (1 cup), Parmesan cheese (30g), Fresh basil (2-3 leaves)",
-    "instructions": "1. Cook gnocchi according to package instructions. 2. Heat tomato sauce in a pan. 3. Toss cooked gnocchi in the sauce. 4. Serve hot, garnished with grated Parmesan cheese and torn basil leaves."
+    "instructions": "1. Cook gnocchi according to package instructions. 2. Heat tomato sauce in a pan. 3. Toss cooked gnocchi in the sauce. 4. Serve hot, garnished with grated Parmesan cheese and torn basil leaves.",
+    "isVegetarian": true
   },
   {
     "id": "f4b4d2bc-ff12-4f3f-b3b3-19d2f1682401",
@@ -42,7 +46,8 @@
     "image": "https://i.pinimg.com/564x/9f/43/ef/9f43efd289a397033fb53cb7d53ad22e.jpg",
     "servings": 1,
     "ingredients": "Beef roast (500g), Potatoes (2 medium), Carrots (2 medium), Onion (1 large), Beef broth (1 cup)",
-    "instructions": "1. Season beef roast with salt and pepper. 2. Sear in a hot pan until browned on all sides. 3. Place seared roast in a slow cooker. 4. Add chopped potatoes, carrots, and onion. 5. Pour beef broth over everything. 6. Cook on low for 6-8 hours or until meat is tender."
+    "instructions": "1. Season beef roast with salt and pepper. 2. Sear in a hot pan until browned on all sides. 3. Place seared roast in a slow cooker. 4. Add chopped potatoes, carrots, and onion. 5. Pour beef broth over everything. 6. Cook on low for 6-8 hours or until meat is tender.",
+    "isVegetarian": false
   },
   {
     "id": "bf89c1db-5c5b-4262-9d1e-8a68f88c61d5",
@@ -51,7 +56,8 @@
     "image": "https://i.pinimg.com/564x/2a/5d/4c/2a5d4cee71e278836cc0549b0148cef9.jpg",
     "servings": 1,
     "ingredients": "Lasagna noodles (200g), Ground beef (250g), Marinara sauce (2 cups), Ricotta cheese (250g), Mozzarella cheese (200g)",
-    "instructions": "1. Cook lasagna noodles according to package instructions. 2. Brown ground beef in a pan. 3. Spread a layer of marinara sauce in a baking dish. 4. Layer cooked noodles, beef, ricotta cheese, and mozzarella cheese. 5. Repeat layers. 6. Bake at 180°C for 30-35 minutes or until cheese is bubbly and golden."
+    "instructions": "1. Cook lasagna noodles according to package instructions. 2. Brown ground beef in a pan. 3. Spread a layer of marinara sauce in a baking dish. 4. Layer cooked noodles, beef, ricotta cheese, and mozzarella cheese. 5. Repeat layers. 6. Bake at 180°C for 30-35 minutes or until cheese is bubbly and golden.",
+    "isVegetarian": false
   },
   {
     "id": "bca9beec-43d3-48b1-9b57-793a8a8c3520",
@@ -60,7 +66,8 @@
     "image": "https://i.pinimg.com/564x/c1/df/8b/c1df8bb9400f83bd4c0415c2508396fd.jpg",
     "servings": 1,
     "ingredients": "Ground beef (150g), Hamburger bun (1), Lettuce (1 leaf), Tomato (1 slice), Onion (1 slice), Pickles (2 slices), Ketchup (1 tbsp), Mustard (1 tbsp), Salt (to taste), Pepper (to taste)",
-    "instructions": "1. Season ground beef with salt and pepper. 2. Shape into a patty. 3. Cook the patty in a skillet over medium heat for 4-5 minutes per side, or until cooked through. 4. Toast the hamburger bun. 5. Assemble the hamburger with lettuce, tomato, onion, pickles, ketchup, and mustard."
+    "instructions": "1. Season ground beef with salt and pepper. 2. Shape into a patty. 3. Cook the patty in a skillet over medium heat for 4-5 minutes per side, or until cooked through. 4. Toast the hamburger bun. 5. Assemble the hamburger with lettuce, tomato, onion, pickles, ketchup, and mustard.",
+    "isVegetarian": false
   },
   {
     "id": "b777a69a-7f1c-41e8-8a4c-1d0e9e4cace8",
@@ -69,7 +76,8 @@
     "image": "https://i.pinimg.com/564x/97/e5/a2/97e5a2c7fc13fec66ffb772ac9364765.jpg",
     "servings": 1,
     "ingredients": "Rice noodles (150g), Shrimp (100g), Tofu (50g), Bean sprouts (50g), Green onions (2), Garlic (2 cloves), Eggs (2), Peanuts (2 tbsp), Vegetable oil (2 tbsp), Soy sauce (2 tbsp), Tamarind paste (1 tbsp), Fish sauce (1 tbsp), Sugar (1 tbsp), Lime (1)",
-    "instructions": "1. Soak rice noodles in warm water for 30 minutes, then drain. 2. Heat vegetable oil in a wok over medium heat. 3. Add minced garlic and chopped green onions, sauté until fragrant. 4. Add shrimp and tofu, cook until shrimp turns pink. 5. Push ingredients to the side, crack eggs into the wok and scramble."
+    "instructions": "1. Soak rice noodles in warm water for 30 minutes, then drain. 2. Heat vegetable oil in a wok over medium heat. 3. Add minced garlic and chopped green onions, sauté until fragrant. 4. Add shrimp and tofu, cook until shrimp turns pink. 5. Push ingredients to the side, crack eggs into the wok and scramble.",
+    "isVegetarian": true
   },
 
   {
@@ -79,7 +87,8 @@
     "image": "https://i.pinimg.com/564x/09/68/b3/0968b326dd206bed149b453d76b29f07.jpg",
     "servings": 1,
     "ingredients": "Hot dog bun (1), Hot dog sausage (1), Ketchup (1 tbsp), Mustard (1 tbsp), Relish (1 tbsp), Onion (1 slice)",
-    "instructions": "1. Grill or boil the hot dog sausage until cooked through. 2. Toast the hot dog bun. 3. Place the cooked sausage in the bun. 4. Add ketchup, mustard, relish, and a slice of onion as desired."
+    "instructions": "1. Grill or boil the hot dog sausage until cooked through. 2. Toast the hot dog bun. 3. Place the cooked sausage in the bun. 4. Add ketchup, mustard, relish, and a slice of onion as desired.",
+    "isVegetarian": false
   },
   {
     "id": "1c6d5b5f-4e72-4136-8c6c-9cf3e3d16a65",
@@ -88,7 +97,8 @@
     "image": "https://i.pinimg.com/564x/9d/45/e8/9d45e8a091f54f542a71e24ef5ccda2a.jpg",
     "servings": 1,
     "ingredients": "All-purpose flour (1 cup), Cocoa powder (1/2 cup), Sugar (1 cup), Baking powder (1 tsp), Baking soda (1/2 tsp), Salt (1/2 tsp), Milk (1/2 cup), Vegetable oil (1/4 cup), Eggs (2), Vanilla extract (1 tsp), Boiling water (1/2 cup)",
-    "instructions": "1. Preheat oven to 180°C. 2. Grease and flour a cake pan. 3. In a large bowl, combine flour, cocoa powder, sugar, baking powder, baking soda, and salt. 4. Add milk, vegetable oil, eggs, and vanilla extract. Mix until well combined. 5. Stir in boiling water until smooth. 6. Pour batter into prepared pan."
+    "instructions": "1. Preheat oven to 180°C. 2. Grease and flour a cake pan. 3. In a large bowl, combine flour, cocoa powder, sugar, baking powder, baking soda, and salt. 4. Add milk, vegetable oil, eggs, and vanilla extract. Mix until well combined. 5. Stir in boiling water until smooth. 6. Pour batter into prepared pan.",
+    "isVegetarian": true
   },
   {
     "id": "07d9616d-7a63-457c-b8a7-58f6a70a67e3",
@@ -97,7 +107,8 @@
     "image": "https://i.pinimg.com/564x/87/5b/7e/875b7e818f2c06fdff267da535c76696.jpg",
     "servings": 1,
     "ingredients": "Whole wheat flour (2 cups), Water (1 cup), Honey (2 tbsp), Olive oil (2 tbsp), Active dry yeast (1 packet), Salt (1 tsp)",
-    "instructions": "1. Dissolve honey in warm water. Sprinkle yeast over water and let stand for 5 minutes until foamy. 2. Add olive oil, salt, and 1 cup of flour to yeast mixture. Stir until combined. 3. Gradually add remaining flour, stirring well after each addition, until dough forms. 4. Knead dough for 10 minutes until smooth. 5. Let rise in a greased bowl for 1 hour until doubled. 6. Punch down dough, shape into loaf, and let rise in greased pan for 30-45 minutes. "
+    "instructions": "1. Dissolve honey in warm water. Sprinkle yeast over water and let stand for 5 minutes until foamy. 2. Add olive oil, salt, and 1 cup of flour to yeast mixture. Stir until combined. 3. Gradually add remaining flour, stirring well after each addition, until dough forms. 4. Knead dough for 10 minutes until smooth. 5. Let rise in a greased bowl for 1 hour until doubled. 6. Punch down dough, shape into loaf, and let rise in greased pan for 30-45 minutes. ",
+    "isVegetarian": true
   },
   {
     "id": "d7a8f0c1-0a34-4e3b-a2d3-3c3e3f11eb19",
@@ -106,6 +117,7 @@
     "image": "https://i.pinimg.com/564x/e7/52/b1/e752b191d1f9b4c8d6d57021c6f714f5.jpg",
     "servings": 1,
     "ingredients": "Grape leaves (1 jar), Ground beef (250g), Rice (1 cup), Onion (1 large), Garlic (2 cloves), Olive oil (2 tbsp), Lemon juice (1/4 cup), Salt (1 tsp), Pepper (1/2 tsp), Dried mint (1 tsp)",
-    "instructions": "1. Rinse grape leaves. 2. Mix ground beef, rice, onion, garlic, olive oil, lemon juice, salt, pepper, and dried mint. 3. Fill grape leaves with mixture and roll. 4. Arrange in pot, cover with water, and simmer for 45-60 minutes. 5. Remove and cool slightly before serving."
+    "instructions": "1. Rinse grape leaves. 2. Mix ground beef, rice, onion, garlic, olive oil, lemon juice, salt, pepper, and dried mint. 3. Fill grape leaves with mixture and roll. 4. Arrange in pot, cover with water, and simmer for 45-60 minutes. 5. Remove and cool slightly before serving.",
+    "isVegetarian": true
   }
 ]
