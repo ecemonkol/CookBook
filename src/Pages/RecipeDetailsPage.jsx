@@ -8,9 +8,6 @@ import "../App.css";
 function RecipeDetailsPage({ recipes }) {
   const { recipeId } = useParams();
   const recipeProfile = recipes.find((recipe) => recipe.id == recipeId);
-  console.log(recipeId);
-  console.log(recipeProfile, "profile");
-  console.log(recipes, "gelueh");
 
   return (
     <>
@@ -27,7 +24,9 @@ function RecipeDetailsPage({ recipes }) {
 
             <div className="recipe-details">
               <div className="edit-button-container">
-                <button className="edit-button">Edit</button>
+                <Link to={`/edit-recipe/${recipeId}`} className="edit-button">
+                  Edit
+                </Link>
               </div>
               <div className="recipe-title">
                 <h1 className="recipe-name">{recipeProfile.name}</h1>

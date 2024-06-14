@@ -1,14 +1,9 @@
-import React from "react";
-import { useState } from "react";
-// import recipeData from "../assets/recipes.json";
-import "../App.css";
-import arrow from "../assets/arrow.png";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
-// import "./AddRecipePage.css";
-
-function AddRecipePage({ handleAddRecipe, recipes }) {
-  // const [recipes, setRecipes] = useState(recipeData);
+function EditRecipePage({ recipes, handleUpdateRecipe }) {
+  const { recipeId } = useParams();
+  const recipeToEdit = recipes.find((recipe) => recipe.id == recipeId);
   const [name, setName] = useState("");
   const [calories, setCalories] = useState(0);
   const [serving, setServing] = useState(1);
@@ -16,56 +11,42 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
   const [ingredients, setIngredients] = useState("");
   const [instructions, setInstructions] = useState("");
   const [isVegetarian, setIsVegetarian] = useState(false);
+  const navigate = useNavigate();
 
-  const handleNameInput = (e) => setName(e.target.value);
-
-  const handleCaloriesInput = (e) => setCalories(e.target.value);
-
-  const handleServingInput = (e) => setServing(e.target.value);
-
-  const handleImageInput = (e) => setImage(e.target.value);
-
-  const handleIngredientsInput = (e) => setIngredients(e.target.value);
-
-  const handleInstructionsInput = (e) => setInstructions(e.target.value);
-
-  const hadleIsVegetarian = (e) => setIsVegetarian(e.target.checked);
-
-  // function handleAddRecipe(recipe) {
-  //   setRecipes((prevRecipes) => [recipe, ...prevRecipes]);
-  // }
+  useEffect(() => {
+    if (recipeToEdit) {
+      setName(recipeToEdit.name);
+      setCalories(recipeToEdit.calories);
+      setServing(recipeToEdit.serving);
+      setImage(recipeToEdit.image);
+      setIngredients(recipeToEdit.ingredients);
+      setInstructions(recipeToEdit.instructions);
+      setIsVegetarian(recipeToEdit.isVegetarian);
+    }
+  }, [recipeToEdit]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newRecipe = {
-      id: Date.now(),
-      recipes,
+    const updatedRecipe = {
+      ...recipeToEdit,
       name,
-      image,
       calories,
       serving,
+      image,
       ingredients,
       instructions,
       isVegetarian,
     };
 
-    // Add new student to students array
-    handleAddRecipe(newRecipe);
-
-    setName("");
-    setImage("");
-    setServing("");
-    setCalories("");
-    setInstructions("");
-    setIngredients("");
-    setIsVegetarian(false);
+    handleUpdateRecipe(updatedRecipe);
+    navigate(`/recipes/${recipeId}`);
   };
 
   return (
     <div>
       <div className="add-recipe-card">
-        <h4>Add a Recipe</h4>
+        <h4>Edit Recipe</h4>
         <form onSubmit={handleSubmit}>
           <div className="input-row-mini">
             <div className="input-group-small">
@@ -74,7 +55,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 type="text"
                 name="name"
                 value={name}
-                onChange={handleNameInput}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="input-group-small">
@@ -83,7 +64,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 type="number"
                 name="calories"
                 value={calories}
-                onChange={handleCaloriesInput}
+                onChange={(e) => setCalories(e.target.value)}
               />
             </div>
             <div className="input-group-small">
@@ -92,7 +73,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 type="number"
                 name="serving"
                 value={serving}
-                onChange={handleServingInput}
+                onChange={(e) => setServing(e.target.value)}
               />
             </div>
           </div>
@@ -104,8 +85,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 type="text"
                 name="image"
                 value={image}
-                checked={isVegetarian}
-                onChange={handleImageInput}
+                onChange={(e) => setImage(e.target.value)}
                 className="image-input"
               />
             </div>
@@ -117,7 +97,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
               <textarea
                 name="ingredients"
                 value={ingredients}
-                onChange={handleIngredientsInput}
+                onChange={(e) => setIngredients(e.target.value)}
                 rows="4"
               />
             </div>
@@ -129,7 +109,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
               <textarea
                 name="instructions"
                 value={instructions}
-                onChange={handleInstructionsInput}
+                onChange={(e) => setInstructions(e.target.value)}
                 rows="4"
               />
             </div>
@@ -141,23 +121,18 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 type="checkbox"
                 name="vegetarian"
                 checked={isVegetarian}
-                onChange={hadleIsVegetarian}
+                onChange={(e) => setIsVegetarian(e.target.checked)}
               />
               <label className="vegetarian-label">Vegetarian</label>
             </div>
           </div>
           <button className="submit-button" type="submit">
-            Submit
+            Save
           </button>
         </form>
-      </div>
-      <div className="arrow-container">
-        <Link className="arrow" to={"/"}>
-          <img className="arrow" src={arrow} alt="Arrow" />
-        </Link>
       </div>
     </div>
   );
 }
 
-export default AddRecipePage;
+export default EditRecipePage;

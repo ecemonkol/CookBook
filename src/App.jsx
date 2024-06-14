@@ -9,6 +9,7 @@ import AddRecipePage from "./Pages/AddRecipePage";
 import RandomRecipePage from "./Pages/RandomRecipePage";
 import { Routes, Route } from "react-router-dom";
 import recipeData from "./assets/recipes.json";
+import EditRecipePage from "./Pages/EditRecipePage";
 
 import "./App.css";
 import NotFoundPage from "./Pages/NotFoundPage";
@@ -16,6 +17,14 @@ import NotFoundPage from "./Pages/NotFoundPage";
 function App() {
   const handleAddRecipe = (newRecipe) => {
     setRecipes((prevRecipes) => [newRecipe, ...prevRecipes]);
+  };
+
+  const handleUpdateRecipe = (updatedRecipe) => {
+    setRecipes((prevRecipes) =>
+      prevRecipes.map((recipe) =>
+        recipe.id === updatedRecipe.id ? updatedRecipe : recipe
+      )
+    );
   };
 
   const [recipes, setRecipes] = useState(() => {
@@ -73,6 +82,15 @@ function App() {
           <Route
             path="/recipes/:recipeId"
             element={<RecipeDetailsPage recipes={recipes} />}
+          />
+          <Route
+            path="/edit-recipe/:recipeId"
+            element={
+              <EditRecipePage
+                recipes={recipes}
+                handleUpdateRecipe={handleUpdateRecipe}
+              />
+            }
           />
           <Route path="/about" element={<AboutPage />} />
           <Route
