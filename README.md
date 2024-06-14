@@ -1,4 +1,4 @@
-# Cookbook App
+# CookBook App
 
 Welcome to the Cookbook App! This application allows you to create, edit, and manage your recipes efficiently. Built with React, React Router DOM, and Vite, it offers a fast and seamless user experience. The app also leverages local storage to save your recipes, so you don't lose any data even when you refresh the page.
 
@@ -66,4 +66,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any inquiries or feedback, feel free to reach out to me at ecemonkol@gmail.com.
+For any inquiries or feedback, feel free to reach out to me at ecemonkol@gmail.com
