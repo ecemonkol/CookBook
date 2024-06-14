@@ -70,7 +70,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
       <div className="add-recipe-card">
         <h4>Add a Recipe</h4>
         <form onSubmit={handleSubmit}>
-          <div className="input-row">
+          <div className="input-row-mini">
             <div className="input-group-small">
               <label>Title:</label>
               <input
@@ -109,6 +109,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 value={image}
                 checked={isVegetarian}
                 onChange={handleImageInput}
+                className="image-input"
               />
             </div>
           </div>
@@ -137,7 +138,7 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
             </div>
           </div>
 
-          <div className="input-row">
+          <div className="input-row-vege">
             <div className="checkbox-veg">
               <input
                 type="checkbox"
@@ -145,10 +146,9 @@ function AddRecipePage({ handleAddRecipe, recipes }) {
                 checked={isVegetarian}
                 onChange={hadleIsVegetarian}
               />
-              <label>Vegetarian</label>
+              <label className="vegetarian-label">Vegetarian</label>
             </div>
           </div>
-
           <button className="submit-button" type="submit">
             Submit
           </button>

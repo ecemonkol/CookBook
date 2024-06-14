@@ -1,8 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import RecipeCard from "../Components/RecipeCard/RecipeCard";
-// import receipeData from "../assets/recipes.json";
-// import "./RecipesPage.css";
-// import { useState } from "react";
 import "../App.css";
 
 function RecipesPage({
@@ -13,13 +10,27 @@ function RecipesPage({
   sortName,
   sortCal,
 }) {
-  // const [recipes, setRecipes] = useState(receipeData);
-  console.log(recipes);
+  const [showTopButton, setShowTopButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopButton(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const deleteItem = (id) => {
     const newRecipe = recipes.filter((recipe) => recipe.id !== id);
-    console.log(newRecipe, "filtered");
     setRecipes(newRecipe);
   };
+
+  function moveTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
     <div className="recipe-page">
@@ -44,10 +55,15 @@ function RecipesPage({
             image={recipe.image}
             deleteItem={deleteItem}
             isVegetarian={recipe.isVegetarian}
-            //   servings={recipe.servings}
+            servings={recipe.servings}
           />
         ))}
       </div>
+      {showTopButton && (
+        <button onClick={moveTop} className="up-button">
+          Up!
+        </button>
+      )}
     </div>
   );
 }

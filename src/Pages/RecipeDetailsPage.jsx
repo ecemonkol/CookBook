@@ -29,10 +29,11 @@ function RecipeDetailsPage({ recipes }) {
               <div className="edit-button-container">
                 <button className="edit-button">Edit</button>
               </div>
-              <h2 className="recipe-title">{recipeProfile.name}</h2>
-              <p className="text-calories">
-                Calories: {recipeProfile.calories}
-              </p>
+              <div className="recipe-title">
+                <h1 className="recipe-name">{recipeProfile.name}</h1>
+                <p className="recipe-cal">{recipeProfile.calories} cal.</p>
+              </div>
+
               <div className="ingredients">
                 <h3>Ingredients:</h3>
                 <p>{recipeProfile.ingredients}</p>
