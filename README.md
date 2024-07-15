@@ -2,6 +2,8 @@
 
 Welcome to the Cookbook App! This application allows you to create, edit, and manage your recipes efficiently. Built with React, React Router DOM, and Vite, it offers a fast and seamless user experience. The app also leverages local storage to save your recipes, so you don't lose any data even when you refresh the page.
 
+https://tomato-cookbook.netlify.app/
+
 ## Features
 
 - **Create Recipes:** Add new recipes with details such as ingredients, steps, and cooking time.
